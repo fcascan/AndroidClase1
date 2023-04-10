@@ -10,11 +10,11 @@
         android:id="@+id/txtHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="99dp"
         android:shadowColor="@color/black"
         android:text="Hello World!"
         android:textColor="@color/Red"
         android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,18 +30,19 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnShow"
         app:layout_constraintEnd_toStartOf="@+id/btnRed"
-        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnRed"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="@color/Red"
         android:text="Red"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnBlue"
+        app:layout_constraintBottom_toTopOf="@+id/btnHide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btnHide" />
@@ -50,7 +51,7 @@
         android:id="@+id/btnShow"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="175dp"
+        android:layout_marginBottom="52dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:text="Show"
         android:textSize="16sp"
